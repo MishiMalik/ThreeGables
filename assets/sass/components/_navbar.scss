@@ -1,0 +1,98 @@
+
+header{   
+    width: 100%;
+}
+.navbar{
+    background-color: $yellow !important;
+    position: relative;
+    padding: 17px 0px !important;
+}
+.navbar-light .navbar-toggler{
+    border: 0px solid $yellow !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.navbar-brand{
+   position: absolute;
+   height: 148px;
+   width: 127px;
+   top: -4px;
+   left: 0px;
+   @media screen and (max-width:992px){
+    height: 130px;
+   width: 120px;
+   }
+   @media screen and (max-width:992px){
+    height: 100px;
+   width: 90px;
+   }
+   @media screen and (max-width:375px){
+    height: 90px;
+   width: 80px;
+}
+}
+.navbar-brand img{
+    height: 148px;
+    width: 127px;
+    @media screen and (max-width:992px){
+        height: 130px;
+       width: 120px;
+       }
+       @media screen and (max-width:992px){
+        height: 100px;
+       width: 90px;
+       }
+       @media screen and (max-width:375px){
+        height: 90px;
+       width: 80px;
+    }
+ }
+ .nav-item{
+     &:not(:last-child){
+        margin-left:5px;
+        margin-right: 20px;
+      
+     }
+     @media screen and (max-width:992px){
+        margin-left:5px;
+        margin-right: 20px;
+        padding:5px 0px;
+    }
+    
+ }
+.nav-link{
+font-style: normal !important;
+font-weight: 300 !important;
+font-size: 18px !important;
+line-height: 32px !important;
+text-transform: uppercase !important;
+color: #FFFFFF !important;
+ }
+ .nav-link:hover{
+   cursor: pointer;
+}
+.active{
+  font-weight: 600 !important;
+}
+.navbar-nav{
+    @media screen and (max-width:1150px){
+        width: 80% !important;
+    }
+    @media screen and (max-width:1080px){
+        width: 85% !important;
+    }
+     @media screen and (max-width:991px){
+         padding:0px 100px;
+         padding-right: 0px !important;
+         width: 90% !important;
+     }
+     @media screen and (max-width:375px){
+        padding:5px 70px;
+    }
+}
+.pop-up{
+  margin-right: 50px;
+    @media screen and (max-width:992px){
+        display: none !important;
+    }
+}

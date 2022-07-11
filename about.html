@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =================================Bootstrap5================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- =================================Style css=================== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- =====================================\poppins fonts==================== -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg  navbar-light w-100 ">
+            <div class="container-fluid px-0  ">
+                <a class="navbar-brand" href="#index.html">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 14H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3.5 7H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3.5 21H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between  w-100" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0   justify-content-end  w-75 ms-3">
+                        <li class="nav-item ">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">THREE GABLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="floor-specification.html" tabindex="-1"
+                                aria-disabled="true">FLOOR SPECIFICATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="gallery.html" tabindex="-1" aria-disabled="true">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html" tabindex="-1" aria-disabled="true">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex pop-up ">
+                        <div class="" onclick="openNav()">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 14H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 7H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 21H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="sidebar" id="mySidenav">
+
+                            <div class="cross mt-3 ms-4" onclick="closeNav()">
+
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.45">
+                                        <path
+                                            d="M14.5 26.5834C21.1734 26.5834 26.5833 21.1735 26.5833 14.5001C26.5833 7.82664 21.1734 2.41675 14.5 2.41675C7.82652 2.41675 2.41663 7.82664 2.41663 14.5001C2.41663 21.1735 7.82652 26.5834 14.5 26.5834Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M18.125 10.875L10.875 18.125" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.875 10.875L18.125 18.125" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+
+                            </div>
+                            <div class="caption-img side-caption ">
+                                <img src="assets/images/side-caption.png" alt="" class="img-fluid ">
+                            </div>
+                            <div class="hero-location d-flex align-items-center nt-4 ms-5">
+                                <div class="hero-location-icon me-4">
+
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M31.5 15C31.5 25.5 18 34.5 18 34.5C18 34.5 4.5 25.5 4.5 15C4.5 11.4196 5.92232 7.9858 8.45406 5.45406C10.9858 2.92232 14.4196 1.5 18 1.5C21.5804 1.5 25.0142 2.92232 27.5459 5.45406C30.0777 7.9858 31.5 11.4196 31.5 15Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M18 19.5C20.4853 19.5 22.5 17.4853 22.5 15C22.5 12.5147 20.4853 10.5 18 10.5C15.5147 10.5 13.5 12.5147 13.5 15C13.5 17.4853 15.5147 19.5 18 19.5Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div class="hero-location-text">
+                                    <p class="mb-0">Austenwood Lane, Chalfont St. Peter, UK</p>
+                                </div>
+
+                            </div>
+                            <div class="social text-center">
+                                <a href="">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.25 1.58337H11.875C10.8251 1.58337 9.81833 2.00041 9.07599 2.74274C8.33366 3.48507 7.91663 4.49189 7.91663 5.54171V7.91671H5.54163V11.0834H7.91663V17.4167H11.0833V11.0834H13.4583L14.25 7.91671H11.0833V5.54171C11.0833 5.33174 11.1667 5.13038 11.3152 4.98191C11.4636 4.83345 11.665 4.75004 11.875 4.75004H14.25V1.58337Z"
+                                            stroke="#17132B" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <a href="">
+
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_24:1503)">
+                                            <path
+                                                d="M18.2083 2.37503C17.4502 2.90978 16.6108 3.31878 15.7225 3.58628C15.2457 3.03806 14.612 2.64949 13.9072 2.47313C13.2024 2.29678 12.4604 2.34114 11.7816 2.60022C11.1028 2.8593 10.52 3.32059 10.1119 3.92172C9.70383 4.52284 9.49022 5.23479 9.49996 5.96128V6.75294C8.10871 6.78902 6.73013 6.48046 5.48701 5.85475C4.24388 5.22905 3.17479 4.30561 2.37496 3.16669C2.37496 3.16669 -0.791707 10.2917 6.33329 13.4584C4.70288 14.5651 2.76062 15.12 0.791626 15.0417C7.91663 19 16.625 15.0417 16.625 5.93753C16.6242 5.71701 16.603 5.49704 16.5616 5.28044C17.3696 4.48363 17.9398 3.47759 18.2083 2.37503V2.37503Z"
+                                                stroke="#17132B" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_24:1503">
+                                                <rect width="19" height="19" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                                <a href="">
+
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4584 1.58337H5.54171C3.35558 1.58337 1.58337 3.35558 1.58337 5.54171V13.4584C1.58337 15.6445 3.35558 17.4167 5.54171 17.4167H13.4584C15.6445 17.4167 17.4167 15.6445 17.4167 13.4584V5.54171C17.4167 3.35558 15.6445 1.58337 13.4584 1.58337Z"
+                                            stroke="#17132B" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12.6666 9.00124C12.7643 9.66011 12.6518 10.333 12.345 10.9242C12.0383 11.5154 11.5529 11.9949 10.9579 12.2943C10.363 12.5938 9.68874 12.698 9.03114 12.5922C8.37353 12.4864 7.76603 12.1759 7.29505 11.7049C6.82407 11.2339 6.51359 10.6264 6.40777 9.96883C6.30196 9.31122 6.40619 8.63699 6.70565 8.04204C7.0051 7.44709 7.48454 6.96171 8.07575 6.65494C8.66697 6.34817 9.33986 6.23563 9.99872 6.33333C10.6708 6.43299 11.293 6.74615 11.7734 7.22657C12.2538 7.70699 12.567 8.32918 12.6666 9.00124Z"
+                                            stroke="#17132B" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M13.8541 5.14587H13.8641" stroke="#17132B" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                            <div class="contact-heading2 ">
+                                For further information, please contact
+                                Castlemere Developments
+                                <hr class="contact-line mx-auto mt-4 mb-0 pb-0">
+                            </div>
+                            <div class="contact-heading-2 mt-2">
+                                <p class="mb-0 pb-0"> Duncan Cooke</p>
+                            </div>
+                            <div class="text text-center">
+                                <p class="f-500 mb-0 pb-0">
+                                    Director
+                                </p>
+                            </div>
+                            <div class="ps-5 contact-col">
+                                <div class="contact">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.04 4.00007C12.8214 4.15252 13.5395 4.53468 14.1025 5.09762C14.6654 5.66057 15.0476 6.37869 15.2 7.16009L12.04 4.00007ZM12.04 0.800049C13.6634 0.980399 15.1773 1.70739 16.333 2.86167C17.4888 4.01594 18.2177 5.52888 18.4 7.15209L12.04 0.800049ZM17.6 13.5361V15.9361C17.6009 16.1589 17.5553 16.3795 17.466 16.5836C17.3768 16.7878 17.2459 16.971 17.0817 17.1216C16.9175 17.2723 16.7237 17.3869 16.5126 17.4583C16.3016 17.5297 16.0779 17.5562 15.856 17.5361C13.3943 17.2687 11.0296 16.4275 8.95199 15.0801C7.01904 13.8519 5.38024 12.2131 4.15196 10.2801C2.79994 8.19306 1.95854 5.81687 1.69595 3.34406C1.67595 3.12284 1.70225 2.89987 1.77315 2.68936C1.84405 2.47885 1.958 2.28541 2.10776 2.12135C2.25752 1.9573 2.43979 1.82622 2.64298 1.73647C2.84617 1.64672 3.06583 1.60026 3.28796 1.60005H5.68797C6.07622 1.59623 6.45261 1.73372 6.74699 1.98688C7.04136 2.24005 7.23364 2.59162 7.28798 2.97606C7.38928 3.74412 7.57714 4.49825 7.84798 5.22407C7.95562 5.51042 7.97891 5.82161 7.91511 6.12078C7.8513 6.41996 7.70307 6.69457 7.48798 6.91208L6.47197 7.92809C7.61083 9.93094 9.26915 11.5893 11.272 12.7281L12.288 11.7121C12.5055 11.497 12.7801 11.3488 13.0793 11.285C13.3785 11.2212 13.6897 11.2445 13.976 11.3521C14.7018 11.623 15.456 11.8108 16.224 11.9121C16.6126 11.9669 16.9676 12.1627 17.2213 12.4621C17.475 12.7615 17.6098 13.1438 17.6 13.5361Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="mb-0 ms-3 f-14">01628 617485</p>
+                                </div>
+                                <div class="contact">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.04 4.00007C12.8214 4.15252 13.5395 4.53468 14.1025 5.09762C14.6654 5.66057 15.0476 6.37869 15.2 7.16009L12.04 4.00007ZM12.04 0.800049C13.6634 0.980399 15.1773 1.70739 16.333 2.86167C17.4888 4.01594 18.2177 5.52888 18.4 7.15209L12.04 0.800049ZM17.6 13.5361V15.9361C17.6009 16.1589 17.5553 16.3795 17.466 16.5836C17.3768 16.7878 17.2459 16.971 17.0817 17.1216C16.9175 17.2723 16.7237 17.3869 16.5126 17.4583C16.3016 17.5297 16.0779 17.5562 15.856 17.5361C13.3943 17.2687 11.0296 16.4275 8.95199 15.0801C7.01904 13.8519 5.38024 12.2131 4.15196 10.2801C2.79994 8.19306 1.95854 5.81687 1.69595 3.34406C1.67595 3.12284 1.70225 2.89987 1.77315 2.68936C1.84405 2.47885 1.958 2.28541 2.10776 2.12135C2.25752 1.9573 2.43979 1.82622 2.64298 1.73647C2.84617 1.64672 3.06583 1.60026 3.28796 1.60005H5.68797C6.07622 1.59623 6.45261 1.73372 6.74699 1.98688C7.04136 2.24005 7.23364 2.59162 7.28798 2.97606C7.38928 3.74412 7.57714 4.49825 7.84798 5.22407C7.95562 5.51042 7.97891 5.82161 7.91511 6.12078C7.8513 6.41996 7.70307 6.69457 7.48798 6.91208L6.47197 7.92809C7.61083 9.93094 9.26915 11.5893 11.272 12.7281L12.288 11.7121C12.5055 11.497 12.7801 11.3488 13.0793 11.285C13.3785 11.2212 13.6897 11.2445 13.976 11.3521C14.7018 11.623 15.456 11.8108 16.224 11.9121C16.6126 11.9669 16.9676 12.1627 17.2213 12.4621C17.475 12.7615 17.6098 13.1438 17.6 13.5361Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="mb-0 ms-3 f-14">07825 600939</p>
+                                </div>
+                                <div class="contact">
+
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.99991 3.40039H16.8C17.68 3.40039 18.4 4.12039 18.4 5.0004V14.6005C18.4 15.4805 17.68 16.2005 16.8 16.2005H3.99991C3.11991 16.2005 2.3999 15.4805 2.3999 14.6005V5.0004C2.3999 4.12039 3.11991 3.40039 3.99991 3.40039Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4 5.00037L10.3999 10.6004L2.3999 5.00037" stroke="#CCAB54"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <p class="mb-0 ms-3 f-14">www.castlemere-developments.co.uk</p>
+                                </div>
+                                <div class="contact">
+
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3999 18.2675C14.8182 18.2675 18.4 14.6858 18.4 10.2675C18.4 5.8492 14.8182 2.26746 10.3999 2.26746C5.98164 2.26746 2.3999 5.8492 2.3999 10.2675C2.3999 14.6858 5.98164 18.2675 10.3999 18.2675Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.3999 10.2676H18.4" stroke="#CCAB54" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M10.3997 2.26746C12.4008 4.45815 13.5379 7.30111 13.5997 10.2675C13.5379 13.2339 12.4008 16.0768 10.3997 18.2675C8.39869 16.0768 7.26151 13.2339 7.19971 10.2675C7.26151 7.30111 8.39869 4.45815 10.3997 2.26746V2.26746Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <p class="mb-0 ms-3 f-14">duncan@castlemere-developments.co.uk</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-heading-2 mt-2">
+                                <p class="mb-0 pb-0"> Kris Collett</p>
+                            </div>
+                            <div class="text text-center">
+                                <p class="f-500 mb-0 pb-0">
+                                    Director
+                                </p>
+                            </div>
+                            <div class="ps-5 contact-col">
+                                <div class="contact">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.04 4.00007C12.8214 4.15252 13.5395 4.53468 14.1025 5.09762C14.6654 5.66057 15.0476 6.37869 15.2 7.16009L12.04 4.00007ZM12.04 0.800049C13.6634 0.980399 15.1773 1.70739 16.333 2.86167C17.4888 4.01594 18.2177 5.52888 18.4 7.15209L12.04 0.800049ZM17.6 13.5361V15.9361C17.6009 16.1589 17.5553 16.3795 17.466 16.5836C17.3768 16.7878 17.2459 16.971 17.0817 17.1216C16.9175 17.2723 16.7237 17.3869 16.5126 17.4583C16.3016 17.5297 16.0779 17.5562 15.856 17.5361C13.3943 17.2687 11.0296 16.4275 8.95199 15.0801C7.01904 13.8519 5.38024 12.2131 4.15196 10.2801C2.79994 8.19306 1.95854 5.81687 1.69595 3.34406C1.67595 3.12284 1.70225 2.89987 1.77315 2.68936C1.84405 2.47885 1.958 2.28541 2.10776 2.12135C2.25752 1.9573 2.43979 1.82622 2.64298 1.73647C2.84617 1.64672 3.06583 1.60026 3.28796 1.60005H5.68797C6.07622 1.59623 6.45261 1.73372 6.74699 1.98688C7.04136 2.24005 7.23364 2.59162 7.28798 2.97606C7.38928 3.74412 7.57714 4.49825 7.84798 5.22407C7.95562 5.51042 7.97891 5.82161 7.91511 6.12078C7.8513 6.41996 7.70307 6.69457 7.48798 6.91208L6.47197 7.92809C7.61083 9.93094 9.26915 11.5893 11.272 12.7281L12.288 11.7121C12.5055 11.497 12.7801 11.3488 13.0793 11.285C13.3785 11.2212 13.6897 11.2445 13.976 11.3521C14.7018 11.623 15.456 11.8108 16.224 11.9121C16.6126 11.9669 16.9676 12.1627 17.2213 12.4621C17.475 12.7615 17.6098 13.1438 17.6 13.5361Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="mb-0 ms-3 f-14">01628 617485</p>
+                                </div>
+                                <div class="contact">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.04 4.00007C12.8214 4.15252 13.5395 4.53468 14.1025 5.09762C14.6654 5.66057 15.0476 6.37869 15.2 7.16009L12.04 4.00007ZM12.04 0.800049C13.6634 0.980399 15.1773 1.70739 16.333 2.86167C17.4888 4.01594 18.2177 5.52888 18.4 7.15209L12.04 0.800049ZM17.6 13.5361V15.9361C17.6009 16.1589 17.5553 16.3795 17.466 16.5836C17.3768 16.7878 17.2459 16.971 17.0817 17.1216C16.9175 17.2723 16.7237 17.3869 16.5126 17.4583C16.3016 17.5297 16.0779 17.5562 15.856 17.5361C13.3943 17.2687 11.0296 16.4275 8.95199 15.0801C7.01904 13.8519 5.38024 12.2131 4.15196 10.2801C2.79994 8.19306 1.95854 5.81687 1.69595 3.34406C1.67595 3.12284 1.70225 2.89987 1.77315 2.68936C1.84405 2.47885 1.958 2.28541 2.10776 2.12135C2.25752 1.9573 2.43979 1.82622 2.64298 1.73647C2.84617 1.64672 3.06583 1.60026 3.28796 1.60005H5.68797C6.07622 1.59623 6.45261 1.73372 6.74699 1.98688C7.04136 2.24005 7.23364 2.59162 7.28798 2.97606C7.38928 3.74412 7.57714 4.49825 7.84798 5.22407C7.95562 5.51042 7.97891 5.82161 7.91511 6.12078C7.8513 6.41996 7.70307 6.69457 7.48798 6.91208L6.47197 7.92809C7.61083 9.93094 9.26915 11.5893 11.272 12.7281L12.288 11.7121C12.5055 11.497 12.7801 11.3488 13.0793 11.285C13.3785 11.2212 13.6897 11.2445 13.976 11.3521C14.7018 11.623 15.456 11.8108 16.224 11.9121C16.6126 11.9669 16.9676 12.1627 17.2213 12.4621C17.475 12.7615 17.6098 13.1438 17.6 13.5361Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="mb-0 ms-3 f-14">07825 600939</p>
+                                </div>
+                                <div class="contact">
+
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.99991 3.40039H16.8C17.68 3.40039 18.4 4.12039 18.4 5.0004V14.6005C18.4 15.4805 17.68 16.2005 16.8 16.2005H3.99991C3.11991 16.2005 2.3999 15.4805 2.3999 14.6005V5.0004C2.3999 4.12039 3.11991 3.40039 3.99991 3.40039Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4 5.00037L10.3999 10.6004L2.3999 5.00037" stroke="#CCAB54"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <p class="mb-0 ms-3 f-14">www.castlemere-developments.co.uk</p>
+                                </div>
+                                <div class="contact">
+
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3999 18.2675C14.8182 18.2675 18.4 14.6858 18.4 10.2675C18.4 5.8492 14.8182 2.26746 10.3999 2.26746C5.98164 2.26746 2.3999 5.8492 2.3999 10.2675C2.3999 14.6858 5.98164 18.2675 10.3999 18.2675Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.3999 10.2676H18.4" stroke="#CCAB54" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M10.3997 2.26746C12.4008 4.45815 13.5379 7.30111 13.5997 10.2675C13.5379 13.2339 12.4008 16.0768 10.3997 18.2675C8.39869 16.0768 7.26151 13.2339 7.19971 10.2675C7.26151 7.30111 8.39869 4.45815 10.3997 2.26746V2.26746Z"
+                                            stroke="#CCAB54" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <p class="mb-0 ms-3 f-14">duncan@castlemere-developments.co.uk</p>
+                                </div>
+                            </div>
+
+                            <div class="side-logo d-flex justify-content-center mt-3">
+                                <img src="assets/images/logo.png" alt="" class="img-fluid mx-auto">
+                            </div>
+                            <div class="copy-text mt-3">
+                                <p>
+                                    COPYRIGHT 2021 ALL RIGHT RESERVED
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mb-5">
+
+        <!-- about section ================================= -->
+        <section>
+            <div class="container-fluid mt-5">
+                <div class="row px-0 content-row">
+                    <div class="col-12 content-col-1 mt-5 intro-images">
+                        <div class="headings  ">
+                            <div class="small-heading">
+                                <p class="mb-0">About</p>
+                            </div>
+                            <div class="main-heading mt-2 ">
+                                Three Gables
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 content-col-1 pe-0 align-items-start order-1">
+                        <div class="text mt-10">
+                            <p class="">Three Gables is a bespoke designed house located in the
+                                popular residential area of Chalfont St. Peter located
+                                adjacent Gerrard’s Cross.</p>
+                            <p class="">
+                                Three Gables is a new detached house located off
+                                <b>Austenwood Lane</b>. The house has been built to the
+                                highest standards ensuring compliance with Building
+                                Regulations and Legislation.
+                            </p>
+                            <p class="">
+                                The house makes maximum use of the available space.
+                                The internal design provides generously proportioned
+                                living spaces all finished to an exacting specification. This
+                                <b>5-bedroom home</b> benefits from peerless quality and
+                                luxurious specification coupled with hand built
+                                craftmanship.
+                            </p>
+                        </div>
+
+                        <button class="main-btn-blnk mx-auto mt-5 sm-btn"><a href="#" class="f-14">MORE
+                                ABOUT</a></button>
+
+                    </div>
+                    <div class="col-lg-6 d-flex  content-col-2 order-2 mt-10 nt-100 intro-images">
+                        <div class="about-img ">
+                            <img src="assets/images/about3.PNG" alt="" class="img-fluid">
+                            <div class="hero-btn mt-40 d-flex align-items-center mt-50 ms-4">
+                                <button class="main-btn  mt-3 lg-btn ms-5"><a href="#" class="f-14">MORE
+                                        ABOUT</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section ================================= -->
+        <section>
+            <div class="container-fluid mt-5">
+                <div class="row  content-row">
+                    <div class="col-lg-6   order-1 intro-images">
+                        <div class="w-100">
+                            <img src="assets/images/about2.png" alt="" class="img-fluid w-100 z-2">
+                            <img src="assets/images/Combined Shape (4).png" alt="" class="img-fluid nt-63">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-2 pe-0 ">
+                        <div class="text ">
+                            <p class="">The elegant house also enjoys a spacious
+                                rear garden. This will comprise of a <b>large patio area, lawn,</b>
+                                and planted beds to create a unique sanctuary to the rear
+                                of the house for relaxation and entertaining. To the front of
+                                the house there will be a double garage and additional
+                                parking available on the forecourt. </p>
+                            <p class="">
+                                The property benefits from a position in the sought-after
+                                area of Chalfont St. Peter/Gerrard’s Cross, within walking
+                                distance of the village high street, it is also within 6mins of
+                                <b>Gerrard’s Cross</b> train station with direct trains to London
+                                Marylebone station within 35mins. A perfect location for
+                                stress free commuting.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- local area====================================== -->
+        <section class="loacl-section mt-5 pb-5">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12 content-col-1 w-100 ">
+                        <div class="d-flex justify-content-end content-row ">
+                            <img src="assets/images/Combined Shape (2).png" alt="" class="img-fluid dec-1 ">
+                        </div>
+                        <div class="headings  ">
+                            <div class="main-heading mt-3 ">
+                                The local area
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 content-col-1 pe-2 align-items-start order-1 ">
+                        <div class="text mt-sm-50">
+                            <p>
+                                Chalfont St Peter is a village and civil parish in south-east
+                                Buckinghamshire, England. It is in a group of villages called The
+                                Chalfont’s which also includes Chalfont St Giles and Little Chalfont. The
+                                villages lie between High Wycombe and Rickmansworth. Chalfont St
+                                Peter is one of the largest villages, with nearly 13,000 residents.
+                            </p>
+                            <p>Gerrards Cross was once a hamlet in the parish of Chalfont St Peter but
+                                became a village and civil parish.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6  content-col-2 order-2 ">
+                        <div class="area-img">
+                            <img src="assets/images/area-img.png" alt="" class="img-fluid ">
+                            <div class="area-address">
+                                <p class="main-text mb-0">
+                                    Chalfont St. Peter /
+                                    Gerrard’s Cross
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row content-row mt-3">
+                    <div class="col-lg-12 pe-0">
+                        <div class="text">
+                            <p>Chalfont St Peter is often described as the Gateway to the Chiltern Hills. It
+                                is not a major tourist centre but has many places to stay, the most notable
+                                being The Greyhound (former local courthouse where hangings took
+                                place), which is situated at the foot of the village on the banks of the River
+                                Misbourne. Nearby there are several manor houses of note, as well as
+                                many museums, cottages, and parks. Milton's Cottage in Chalfont St
+                                Giles, the Colne Valley regional park, Bekonscot Model Village, Chenies
+                                Manor House, the Chiltern Open Air Museum, Odds Farm
+                                Park, Cliveden, Dorney Court, Harrow Museum & Heritage Centre, Royal
+                                Windsor Racecourse and Hughenden Manor are the nearest attractions
+                                to the village itself. The Chiltern Open Air Museum is situated mainly
+                                within the village.
+                            </p>
+                            <p>The high street comprises several restaurants and take away outlets
+                                together with boutique clothing shops and pet groomers. Chalfont’s & Gerrards Cross
+                                Health Clinic is located less than 1 mile from
+                                the development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- our commitment section============================ -->
+        <section>
+            <div class="container-fluid">
+                <div class="row content-row mt-5 ">
+                    <div class="col-lg-12 intro-images">
+                        <p class="main-heading px-0">
+                            Our Commitment to you
+                        </p>
+                    </div>
+                </div>
+                <div class="row content-row d-flex justify-content-between mt-5 no-margin">
+                    <div class="col-lg-5 intro-images">
+                        <div class="tertiary-heading">
+                            Your Home
+                        </div>
+                        <div class="light-text pe-4">
+                            <p>When you buy a Castlemere Home, you can be
+                                confident that you are buying a home of excellent
+                                build quality and exquisite unique design.
+                            </p>
+                            <p>
+                                Every home we build is built to an exceptional
+                                specification. We ensure every home is
+                                sustainable, architecturally innovative and
+                                designed to complement the local environment
+                                and improve the quality of life for those who live
+                                there.
+                            </p>
+                            <p>
+                                Our team of professionals take great pride in
+                                building stunning homes in desirable locations,
+                                enhancing landscapes, and building communities
+                                across London and the South-East.
+                            </p>
+                            <p>
+                                All our new homes benefit from an industry
+                                recognised 10-year insurance backed guarantee.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 intro-images">
+                        <div class="tertiary-heading my-2">
+                            Your Home
+                        </div>
+                        <div class="light-text pe-4">
+                            <p>
+                                Our commitment to creating the best possible
+                                living environment does not stop at the design
+                                and build of our homes. We also place a great
+                                deal of emphasis on the wider environment.
+                            </p>
+                            <p>
+                                We appreciate the importance of green space and
+                                will always look to enhance the natural
+                                environment through beautiful landscaping design
+                                and preservation of protected areas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container-fluid mt-300">
+            <div class="row footer-row ">
+                <div class="col-lg-5 mt-2">
+                    <div class="secondary-heading white">
+                        GET IN TOUCH
+                    </div>
+                    <div class="footer-caption d-flex align-items-center w-100">
+                        <hr class="me-4  border-line">
+                        <p class="mb-0">Let’s Talk Together</p>
+                    </div>
+                    <div class="hero-location d-flex align-items-center my-5 foot-ofset">
+                        <div class="hero-location-icon me-4">
+
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.5 15C31.5 25.5 18 34.5 18 34.5C18 34.5 4.5 25.5 4.5 15C4.5 11.4196 5.92232 7.9858 8.45406 5.45406C10.9858 2.92232 14.4196 1.5 18 1.5C21.5804 1.5 25.0142 2.92232 27.5459 5.45406C30.0777 7.9858 31.5 11.4196 31.5 15Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18 19.5C20.4853 19.5 22.5 17.4853 22.5 15C22.5 12.5147 20.4853 10.5 18 10.5C15.5147 10.5 13.5 12.5147 13.5 15C13.5 17.4853 15.5147 19.5 18 19.5Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+
+                        <div class="hero-location-text white foot-ofset">
+                            <p class="mb-0 white f-300">Austenwood Lane, Chalfont St. Peter, UK</p>
+                        </div>
+                    </div>
+                    <div class="footer__logo d-flex align-items-center foot-ofset">
+                        <img src="assets/images/logo.png" alt="" class="img-fluid">
+                        <div class="secondary-heading white">
+                            THREE GABLES
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-7 pe-4 ps-0 foot-col">
+                    <div
+                        class=" nt-120 footer-form w-100 bg-white d-flex justify-content-center flex-column align-items-center">
+                        <img src="assets/images/caption.png" alt="" class="img-fluid mx-auto foot-img">
+                        <form action="" class="w-100 container-fluid ">
+                            <div class="row justify-content-center ">
+                                <div class="col-lg-6 d-flex justify-content-center mb-5">
+                                    <input type="text" placeholder="Your Name" class="w-100 foot-input">
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-center mb-5">
+                                    <input type="email" placeholder="Your Email" class="w-100 foot-input">
+                                </div>
+                                <div class="col-lg-12 mt-5 full-input">
+                                    <input type="text" placeholder="Your Email" class="w-100 foot-input">
+                                </div>
+                                <button class="main-btn my-5 "><a href="#" class="">SUBMIT</a></button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row w-100 mt-4 ps-3">
+            <div class="col-12">
+                <ul class="d-flex flex-row w-100 footer-nav">
+                    <li class="nav-item2 ">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link" href="about.html">THREE GABLES</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link " href="floor-specification.html" tabindex="-1" aria-disabled="true">FLOOR
+                            SPECIFICATION</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link " href="gallery.html" tabindex="-1" aria-disabled="true">GALLERY</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link " href="contact.html" tabindex="-1" aria-disabled="true">CONTACT US</a>
+                    </li>
+                    <li class="ms-auto">
+                        <a class="nav-link " tabindex="-1" aria-disabled="true">COPYRIGHT 2021 ALL RIGHT RESERVED</a>
+                    </li>
+                </ul>
+                <div class="text white text-center copy-right mb-3">
+                    COPYRIGHT 2021 ALL RIGHT RESERVED
+                </div>
+            </div>
+        </div>
+        </div>
+        <a class="up" href="#body">
+            <img src="assets/images/makefg.png" alt="">
+        </a>
+    </footer>
+
+    <!-- =========================================================================================== -->
+    <!--========================= BackDrawer section===================== -->
+    <!-- =========================================================================================== -->
+    <div class="backdrop" id="backdrop" href="javascript:void(0)" onclick="closeNav()">
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>

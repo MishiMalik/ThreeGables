@@ -1,0 +1,145 @@
+footer {
+    background-color: #16132A;
+    padding: 0px 0px;
+    position: relative;
+
+}
+
+.footer-row {
+    padding: 0px 30px;
+
+    @media screen and (max-width:500px) {
+        padding: 0 10px !important;
+    }
+}
+
+.footer-form {
+    border: 1px solid black;
+
+    @media screen and (max-width:500px) {
+        padding: 0px !important;
+    }
+}
+
+.footer-caption p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.75px;
+    color: #FFFFFF;
+}
+
+.border-line {
+    width: 61px;
+    border: 2px solid white !important;
+    opacity: 1;
+
+    @media screen and (max-width:530px) {
+        margin: 0px 10px 0px 0px !important;
+        width: 30px;
+    }
+}
+
+ul {
+    list-style: none !important;
+}
+
+.nav-item2 {
+    margin: 0px 8px !important;
+}
+
+.footer-form {
+    background-color: white;
+    padding: 5px 20px;
+}
+
+.foot-col {
+    @media screen and (max-width:992px) {
+        padding: 0px !important;
+    }
+}
+
+.foot-ofset {
+    @media screen and (max-width:992px) {
+        display: none !important;
+    }
+}
+
+.foot-input {
+    border: 0px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.4375px;
+    color: #000000;
+    padding: 10px 5px;
+}
+
+.mt-300 {
+    margin-top: 300px !important;
+
+    @media screen and (max-width:992px) {
+        margin-top: 30px !important;
+    }
+}
+
+.nt-120 {
+    margin-top: -250px;
+
+    @media screen and (max-width:1026px) {
+        margin-top: -200px;
+    }
+
+    @media screen and (max-width:992px) {
+        margin-top: 10px;
+    }
+}
+
+.footer-nav {
+    @media screen and (max-width:1280px) {
+        display: none !important;
+    }
+}
+
+.copy-right {
+    display: none;
+
+    @media screen and (max-width:1280px) {
+        display: block !important;
+    }
+
+    @media screen and (max-width:400px) {
+        font-size: 15px !important;
+    }
+}
+
+.full-input {
+    @media screen and (max-width:992px) {
+        margin-top: 0px !important;
+    }
+}
+
+/*  */
+.up {
+    background-color: white;
+}
+
+.up img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    border-radius: 50%;
+    z-index: 8;
+    background-color: white;
+    border: 0px solid white;
+}
+
+.foot-input:focus {
+    outline: none !important;
+    border: 0 px solid #DEDEDE;
+    border-bottom: 1 px solid #DEDEDE;
+}
